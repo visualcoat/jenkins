@@ -1,0 +1,17 @@
+  currentBuild.result = 'FAILED'
+  tools.notifyBuild(currentBuild.result)
+
+println("CDUSZYNSKI - START")
+node { 
+  sh "whoami"
+  sh "hostname"
+  sh "az --version"
+  //sh "az logon"
+  //sh "az account set --subscription 76450781-b894-47f7-88ff-23a43490e7e2"
+  //sh "az group create -n 'TD-myVM' -l 'Central US'"
+}
+println("CDUSZYNSKI - END")
+
+
+//sh "az group delete -n 'TD-myVM' --no-wait --yes"
+//sh "az group deployment create --resource-group TD-myVM --parameters '{\'adminUsername\': {\'value\': \'me\'},\'adminPassword\': {\'value\': \'.5@myQLQRexDef\'},\'dnsLabelPrefix\': {\'value\': \'td-myvm01\'}}' --template-uri https://raw.githubusercontent.com/visualcoat/HM-AZURE-VM01/develop/azuredeploy.json?token=Ab7dzuI24re0W6hZn7uHJmCD6HjWzm8zks5ZWsuMwA%3D%3D"
