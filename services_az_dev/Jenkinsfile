@@ -4,6 +4,7 @@ println("CDUSZYNSKI - START")
 //import jenkins.model.Jenkins
 
 node{
+println("CDUSZYNSKI - MID")
 //Import Build Tools
 def tools = load "/tools/tools.groovy"
 currentBuild.result = 'FAILED'
@@ -11,7 +12,7 @@ tools.notifyBuild(currentBuild.result)
  }
 
 
-println("CDUSZYNSKI - MID")
+
 node { 
   sh "whoami"
   sh "hostname"
