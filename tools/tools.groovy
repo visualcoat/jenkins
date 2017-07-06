@@ -1,3 +1,4 @@
+println("TOOLS - START")
 import groovy.json.JsonSlurperClassic
 
 
@@ -29,7 +30,7 @@ def zipLambda(String folder, String serviceName) {
  * @return none
  */
 def notifyBuild(String buildStatus = 'STARTED') {
-
+println("notifyBuild - START")
     // Build status of null means successful
     buildStatus =  buildStatus ?: 'SUCCESSFUL'
 
