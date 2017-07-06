@@ -4,23 +4,24 @@ println("CDUSZYNSKI - START")
 //import jenkins.model.Jenkins
 
 node{
-println("CDUSZYNSKI - MID")
+println("NODE01 - S")
 //Import Build Tools
 def tools = load "/tools/tools.groovy"
 currentBuild.result = 'FAILED'
 tools.notifyBuild(currentBuild.result)
+println("NODE01 - Z")
  }
 
 
 
-node { 
-  sh "whoami"
-  sh "hostname"
-  sh "az --version"
+//node { 
+//  sh "whoami"
+//  sh "hostname"
+//  sh "az --version"
   //sh "az logon"
   //sh "az account set --subscription 76450781-b894-47f7-88ff-23a43490e7e2"
   //sh "az group create -n 'TD-myVM' -l 'Central US'"
-}
+//}
 println("CDUSZYNSKI - END")
 
 
