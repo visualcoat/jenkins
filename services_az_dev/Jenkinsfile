@@ -2,10 +2,14 @@
 println("CDUSZYNSKI - START")
 
 //import jenkins.model.Jenkins
- //Import Build Tools
+
+node("New_Slave"){
+//Import Build Tools
 def tools = load "/tools/tools.groovy"
 currentBuild.result = 'FAILED'
 tools.notifyBuild(currentBuild.result)
+ }
+
 
 println("CDUSZYNSKI - MID")
 node { 
@@ -21,3 +25,4 @@ println("CDUSZYNSKI - END")
 
 //sh "az group delete -n 'TD-myVM' --no-wait --yes"
 //sh "az group deployment create --resource-group TD-myVM --parameters '{\'adminUsername\': {\'value\': \'me\'},\'adminPassword\': {\'value\': \'.5@myQLQRexDef\'},\'dnsLabelPrefix\': {\'value\': \'td-myvm01\'}}' --template-uri https://raw.githubusercontent.com/visualcoat/HM-AZURE-VM01/develop/azuredeploy.json?token=Ab7dzuI24re0W6hZn7uHJmCD6HjWzm8zks5ZWsuMwA%3D%3D"
+
