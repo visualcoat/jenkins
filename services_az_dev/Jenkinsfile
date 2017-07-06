@@ -1,7 +1,12 @@
-  currentBuild.result = 'FAILED'
+ 
+println("CDUSZYNSKI - MID")
+
+import jenkins.model.Jenkins
+
+currentBuild.result = 'FAILED'
   tools.notifyBuild(currentBuild.result)
 
-println("CDUSZYNSKI - START")
+println("CDUSZYNSKI - MID")
 node { 
   sh "whoami"
   sh "hostname"
