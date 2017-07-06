@@ -1,10 +1,10 @@
  
-println("CDUSZYNSKI - MID")
+println("CDUSZYNSKI - START")
 
-import jenkins.model.Jenkins
+//import jenkins.model.Jenkins
 
 currentBuild.result = 'FAILED'
-  tools.notifyBuild(currentBuild.result)
+tools.notifyBuild(currentBuild.result)
 
 println("CDUSZYNSKI - MID")
 node { 
