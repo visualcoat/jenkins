@@ -3,7 +3,7 @@ println("CDUSZYNSKI - START")
 
 //import jenkins.model.Jenkins
 
-node("New_Slave"){
+node{
 //Import Build Tools
 def tools = load "/tools/tools.groovy"
 currentBuild.result = 'FAILED'
