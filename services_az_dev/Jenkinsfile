@@ -7,7 +7,7 @@ node{
 println("NODE01 - S")
 //Import Build Tools
 // def azureUtil = load './deployment/jenkins/azureutil.groovy'
-def tools = load './Tools/tools.groovy'
+def tools = load '././Tools/tools.groovy'
 currentBuild.result = 'FAILED'
 tools.notifyBuild(currentBuild.result)
 println("NODE01 - Z")
