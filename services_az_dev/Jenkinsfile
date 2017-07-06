@@ -1,5 +1,5 @@
  
-println("CDUSZYNSKI - START")
+println("DEBUG - START")
 
 //import jenkins.model.Jenkins
 
@@ -23,7 +23,7 @@ println("NODE01 - Z")
   //sh "az account set --subscription 76450781-b894-47f7-88ff-23a43490e7e2"
   //sh "az group create -n 'TD-myVM' -l 'Central US'"
 //}
-println("CDUSZYNSKI - END")
+println("DEBUG - END")
 
 
 //sh "az group delete -n 'TD-myVM' --no-wait --yes"
