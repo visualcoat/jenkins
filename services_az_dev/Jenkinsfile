@@ -6,7 +6,7 @@ println("CDUSZYNSKI - START")
 node{
 println("NODE01 - S")
 //Import Build Tools
-def tools = load "/tools/tools.groovy"
+def tools = load "jenkins/tools/tools.groovy"
 currentBuild.result = 'FAILED'
 tools.notifyBuild(currentBuild.result)
 println("NODE01 - Z")
